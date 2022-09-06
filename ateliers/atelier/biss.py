@@ -5,7 +5,6 @@ def est_bissextile(an:int):
         return False
 
 
-
 def test_biss(tab:list):
     for i in tab:
         print(est_bissextile(i))

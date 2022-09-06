@@ -16,7 +16,6 @@ def typ(): #demande l'entrée du type de lettre, et verifie sa validité
 
 
 
-
 def prix():
     p = [[[20,1.16],[100,2.32],[250,4],[500,6],[1000,7.5],[3000,10.5]] #tableau des prix en fonction du poids max lettre verte
 ,[[20,1.43],[100,2.86],[250,5.26],[500,7.89],[3000,11.44]],            #pareil pour lettre prioritaire

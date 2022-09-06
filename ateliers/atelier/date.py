@@ -1,5 +1,4 @@
 from biss import est_bissextile
-import time
 from datetime import date
 
 def date_est_valide(jour,mois,année):

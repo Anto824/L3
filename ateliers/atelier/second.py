@@ -6,7 +6,6 @@ def discriminant(a,b,c):
     d-=e
     return d
 
-
 def racine_unique(a,b):
     d = -b/(2*a)
     return d

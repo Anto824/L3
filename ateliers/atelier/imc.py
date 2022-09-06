@@ -20,6 +20,5 @@ def test_imc(tab:list):
         print(message_imc(i))
 
 
-
 tab = [12,45,32,29,25,23]
 test_imc(tab)
