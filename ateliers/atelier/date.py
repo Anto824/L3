@@ -43,7 +43,6 @@ def age(dat):
         return age
     else:
         return age-1
-
 def est_majeur(dat):
     if age(dat)<18:
         return False
@@ -57,5 +56,3 @@ def test_acces():
     else: 
         return 'accès refusé'
 print(test_acces())
-
-
