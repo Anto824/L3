@@ -48,6 +48,7 @@ def est_majeur(dat):
         return False
     else:
         return True
+        
 def test_acces():
     dat = saisie_date_naissance()
     if est_majeur(dat):
