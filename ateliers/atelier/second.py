@@ -71,7 +71,7 @@ def str_equation(a:int,b:int,c:int)->str:
         equ = equ+str(a)
         equ = equ+'x2'
     if b == -1:
-        b = str('-')
+        b = str('-')                    #on ajoute a la chainne de caractères tous les elements en faisant attention aux cas particuliers.
     elif b<0:
         equ = equ+str(b)
         equ = equ+'x'
