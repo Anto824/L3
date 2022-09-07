@@ -1,7 +1,6 @@
 import random
 
 
-global listeChoix 
 listeChoix = ['papier','pierre','ciseaux','puit']
 
 def infosJoueurs(): #retourne le nombre de joueurs ainsi que leurs noms.
