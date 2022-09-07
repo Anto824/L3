@@ -1,15 +1,25 @@
+DENUTRITION = 16.5
+MAIGREUR = 18.5
+NORMALE = 25
+SURPOIDS = 30
+OBESITE_MOD = 35
+OBESITE_SEV = 40
+
+
+
+
 def message_imc(imc):
-    if imc<16.5:
+    if imc<DENUTRITION:
         msg = 'dénutrition ou famine'
-    elif imc<18.5:
+    elif imc<MAIGREUR:
         msg = 'maigreur'
-    elif imc<25:
+    elif imc<NORMALE:
         msg = 'corpulence normale'
-    elif imc<30:
+    elif imc<SURPOIDS:
         msg = 'surpoids'
-    elif imc<35:
+    elif imc<OBESITE_MOD:
         msg = 'obésité modérée'
-    elif imc<40:
+    elif imc<OBESITE_SEV:
         msg = 'obésité sévère'
     else:
         msg = 'obésité morbide'
