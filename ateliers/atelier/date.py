@@ -1,7 +1,7 @@
 from biss import est_bissextile
 from datetime import date
 
-def date_est_valide(jour:int,mois:int,annee:int):
+def date_est_valide(jour:int,mois:int,annee:int)->bool:
     """determine si une date est valide ou non
 
     Args:
@@ -36,7 +36,7 @@ def date_est_valide(jour:int,mois:int,annee:int):
 
 #print(date_est_valide(29,2,2001))
 
-def saisie_date_naissance():
+def saisie_date_naissance()->date:
     """saisie de la date de naissance de l'utilisateur
 
     Returns:
@@ -51,7 +51,7 @@ def saisie_date_naissance():
         print('date invalide, veuillez réessayer')
         saisie_date_naissance()
 
-def age(dat:date):
+def age(dat:date)->int:
     """retourne l'age de la personne, en fonction de sa date de naissance
 
     Args:
@@ -67,7 +67,7 @@ def age(dat:date):
         return age-1
 
 
-def est_majeur(dat:date):
+def est_majeur(dat:date)->bool:
     """determine si une personne est majeure ou non
 
     Args:
@@ -81,7 +81,7 @@ def est_majeur(dat:date):
     else:
         return True
         
-def test_acces():
+def test_acces()->str:
     """autorise ou non un accès selon si la personne est majeure ou non
 
     Returns:

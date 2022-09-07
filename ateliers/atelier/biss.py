@@ -1,4 +1,4 @@
-def est_bissextile(an:int):
+def est_bissextile(an:int)->bool:
     """verifie si l'année en entrée est bissextile
 
     Args:
@@ -13,7 +13,7 @@ def est_bissextile(an:int):
         return False
 
 
-def test_biss(tab:list):
+def test_biss(tab:list)->None:
     """teste differentes année
 
     Args:

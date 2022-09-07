@@ -1,7 +1,7 @@
 
 
 
-def typ(): 
+def typ()->int:
     """demande l'entrée du type de lettre, et verifie sa validité
 
     Returns:
@@ -21,7 +21,7 @@ def typ():
 
 
 
-def prix():
+def prix()->None:
     """affiche le prix à payer
     """
     p = [[[20,1.16],[100,2.32],[250,4],[500,6],[1000,7.5],[3000,10.5]] #tableau des prix en fonction du poids max lettre verte

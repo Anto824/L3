@@ -3,7 +3,7 @@ import random
 
 listeChoix = ['papier','pierre','ciseaux','puit']
 
-def infosJoueurs(): #retourne le nombre de joueurs ainsi que leurs noms.
+def infosJoueurs()->list: #retourne le nombre de joueurs ainsi que leurs noms.
     """recupere les informations de/des joueur(s)
 
     Returns:
@@ -27,7 +27,7 @@ def infosJoueurs(): #retourne le nombre de joueurs ainsi que leurs noms.
 
 
 
-def verif(nom:str):
+def verif(nom:str)->str:
     """verifie le choix du joueur
 
     Args:
@@ -45,7 +45,7 @@ def verif(nom:str):
 
 
 
-def partie():
+def partie()->None:
     """lance la partie
     """
     tableauInfos = infosJoueurs() #recuperation infos joueurs.

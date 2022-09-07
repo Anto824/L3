@@ -8,7 +8,7 @@ OBESITE_SEV = 40
 
 
 
-def message_imc(imc:float):
+def message_imc(imc:float)->str:
     """donne une signification de l'imc d'une personne
 
     Args:
@@ -33,7 +33,7 @@ def message_imc(imc:float):
         msg = 'obésité morbide'
     return msg
 
-def test_imc(tab:list):
+def test_imc(tab:list)->None:
     """teste plusieurs valeurs d'imc pour la fonction message_imc
 
     Args:

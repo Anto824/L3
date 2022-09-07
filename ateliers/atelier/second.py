@@ -1,6 +1,6 @@
 import math
 
-def discriminant(a:int,b:int,c:int):
+def discriminant(a:int,b:int,c:int)->int:
     """calcule le determinant d'un polynome du second degré
 
     Args:
@@ -16,7 +16,7 @@ def discriminant(a:int,b:int,c:int):
     d-=e
     return d
 
-def racine_unique(a:int,b:int):
+def racine_unique(a:int,b:int)->int:
     """donne la solution de l'equation y=0 du polynome du second degré, dans le cas où le determinant est egal à 0
 
     Args:
@@ -29,7 +29,7 @@ def racine_unique(a:int,b:int):
     d = -b/(2*a)
     return d
 
-def racine_double(a:int,b:int,delta:float,num:int):
+def racine_double(a:int,b:int,delta:float,num:int)->float:
     """donne une des deux solutions de l'equation y=0
 
     Args:
@@ -51,7 +51,7 @@ def racine_double(a:int,b:int,delta:float,num:int):
         rac = rac/2*a
     return rac
 
-def str_equation(a:int,b:int,c:int):
+def str_equation(a:int,b:int,c:int)->str:
     """donne l'equation du second degre complete en fonction des coefficients
 
     Args:
@@ -92,7 +92,7 @@ def str_equation(a:int,b:int,c:int):
     return equ
 
 
-def solution_equation(a:int,b:int,c:int):
+def solution_equation(a:int,b:int,c:int)->str:
     """donne toutes les solutions réelles d'une equation du second degré
 
     Args:
@@ -112,7 +112,7 @@ def solution_equation(a:int,b:int,c:int):
         return "aucune solution pour l'equation " + str_equation(a,b,c)
 
 
-def test_sec(tab:list):
+def test_sec(tab:list)->None:
     """teste plusieurs equations
 
     Args:
