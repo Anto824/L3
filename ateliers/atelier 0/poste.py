@@ -9,11 +9,11 @@ def typ()->int:
     """
     lst = ['verte','prioritaire','eco']
     t=input("entrez votre type de lettre (verte, prioritaire ou eco)")
-    if t not in lst:
+    if t not in lst: #si la reponse n'est pas dans la liste, on entre dans un boucle jusqu'a ce que l'entrée soit correcte.
         c = True
         while c:
             t = input("erreur, veuillez entrer votre type de lettre (verte, prioritaire ou eco)")
-            if t in lst: 
+            if t in lst: #stoppe la boucle quand l'entrée est correcte.
                 c = False
     ind=lst.index(t) #renvoie l'emplacement du type entré dans la liste lst. l'emplacement sera utilisé plus tard pour parcourir le tableau des prix au bon endroit.
     return ind
