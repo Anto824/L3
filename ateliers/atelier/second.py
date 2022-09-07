@@ -101,7 +101,7 @@ def solution_equation(a:int,b:int,c:int)->str:
         c (int): coefficient c
 
     Returns:
-        String : solutions de l'equation y=0
+        (string) : solutions de l'equation y=0
     """
     delta = discriminant(a,b,c)
     if delta==0:

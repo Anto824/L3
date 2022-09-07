@@ -7,7 +7,7 @@ def infosJoueurs()->list: #retourne le nombre de joueurs ainsi que leurs noms.
     """recupere les informations de/des joueur(s)
 
     Returns:
-        list : tableau contenant les infos necessaires (solo ou multi, nom du joueur 1, nom du joueur 2)
+        (list) : tableau contenant les infos necessaires (solo ou multi, nom du joueur 1, nom du joueur 2)
     """
     solomulti=''
     while solomulti != 'O' and solomulti != 'N':

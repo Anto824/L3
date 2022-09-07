@@ -10,7 +10,7 @@ def date_est_valide(jour:int,mois:int,annee:int)->bool:
         annee (int): numero de l'année
 
     Returns:
-        _type_: booléen
+        (booleen): validité de la date
     """
     if jour > 31 or mois >12 or jour <= 0 or mois <= 0:
         return False
@@ -40,7 +40,7 @@ def saisie_date_naissance()->date:
     """saisie de la date de naissance de l'utilisateur
 
     Returns:
-        _type_: date
+        (date): date de naissance
     """
     a = int(input('entrez votre annee de naissance: '))
     m = int(input('entrez votre mois de naissance: '))
@@ -51,6 +51,8 @@ def saisie_date_naissance()->date:
         print('date invalide, veuillez réessayer')
         saisie_date_naissance()
 
+
+
 def age(dat:date)->int:
     """retourne l'age de la personne, en fonction de sa date de naissance
 
@@ -58,7 +60,7 @@ def age(dat:date)->int:
         dat (date): date de naissance
 
     Returns:
-        age : int
+        age (int) : age de la personne
     """
     age = date.today().year - dat.year
     if date.today().month > dat.month:
@@ -74,7 +76,7 @@ def est_majeur(dat:date)->bool:
         dat (date): date de naissance
 
     Returns:
-        booléen: True si majeur, False si mineur
+        (booléen): True si majeur, False si mineur
     """
     if age(dat)<18:
         return False
@@ -85,7 +87,7 @@ def test_acces()->str:
     """autorise ou non un accès selon si la personne est majeure ou non
 
     Returns:
-        _type_: String
+        (string): accès accepté ou refusé
     """
     dat = saisie_date_naissance()
     if est_majeur(dat):

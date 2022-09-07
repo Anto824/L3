@@ -5,7 +5,7 @@ def est_bissextile(an:int)->bool:
         an (int): année à tester
 
     Returns:
-        _type_: booléen
+        booleen: bissextile ou non 
     """
     if(an%4==0 and an%100!=0 or an%400==0):
         return True
