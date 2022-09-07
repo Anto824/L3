@@ -8,7 +8,15 @@ OBESITE_SEV = 40
 
 
 
-def message_imc(imc):
+def message_imc(imc:float):
+    """donne une signification de l'imc d'une personne
+
+    Args:
+        imc (float): indice de masse corporelle d'une personne
+
+    Returns:
+        msg (String): message correspondant à la signification trouvée
+    """
     if imc<DENUTRITION:
         msg = 'dénutrition ou famine'
     elif imc<MAIGREUR:
@@ -26,6 +34,11 @@ def message_imc(imc):
     return msg
 
 def test_imc(tab:list):
+    """teste plusieurs valeurs d'imc pour la fonction message_imc
+
+    Args:
+        tab (list): tableau d'entiers  contenant les imc à tester
+    """
     for i in tab:
         print(message_imc(i))
 

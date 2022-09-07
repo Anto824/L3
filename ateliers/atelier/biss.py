@@ -1,4 +1,12 @@
 def est_bissextile(an:int):
+    """verifie si l'année en entrée est bissextile
+
+    Args:
+        an (int): année à tester
+
+    Returns:
+        _type_: booléen
+    """
     if(an%4==0 and an%100!=0 or an%400==0):
         return True
     else:
@@ -6,7 +14,12 @@ def est_bissextile(an:int):
 
 
 def test_biss(tab:list):
-    for i in tab:
+    """teste differentes année
+
+    Args:
+        tab (list): tableau d'entiers
+    """
+    for i in tab: #parcours le tableau d'entrée
         print(est_bissextile(i))
 
 

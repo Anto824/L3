@@ -5,6 +5,11 @@ global listeChoix
 listeChoix = ['papier','pierre','ciseaux','puit']
 
 def infosJoueurs(): #retourne le nombre de joueurs ainsi que leurs noms.
+    """recupere les informations de/des joueur(s)
+
+    Returns:
+        list : tableau contenant les infos necessaires (solo ou multi, nom du joueur 1, nom du joueur 2)
+    """
     solomulti=''
     while solomulti != 'O' and solomulti != 'N':
         if solomulti != '':
@@ -23,7 +28,15 @@ def infosJoueurs(): #retourne le nombre de joueurs ainsi que leurs noms.
 
 
 
-def verif(nom):
+def verif(nom:str):
+    """verifie le choix du joueur
+
+    Args:
+        nom (string): choix du joueur pour la manche
+
+    Returns:
+        choix (string): choix verifie du joueur
+    """
     while True:
         choix = input('{nom} faîtes votre choix parmi (pierre, papier, ciseaux, puit): '.format(nom=nom))
         if choix not in listeChoix:
@@ -34,6 +47,8 @@ def verif(nom):
 
 
 def partie():
+    """lance la partie
+    """
     tableauInfos = infosJoueurs() #recuperation infos joueurs.
     solomulti = tableauInfos[0]
     nom1 = tableauInfos[1]
