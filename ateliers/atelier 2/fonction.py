@@ -59,3 +59,39 @@ print(est_injective(L,M))
 def est_bijective(X,Y):
     return est_injective(X,Y) and est_surjective(X,Y)
         
+
+
+
+
+
+def listehisto(X):
+    a = max(X)
+    h = []
+    for i in range(a+1):
+        h.append(X.count(i))
+    return h
+
+
+
+
+
+
+
+def histo(h):
+    print("")
+    H = max(h)
+    while True:
+        if H == 0:
+            break
+        for i in h:
+            if i>=H:
+                print("#    ",end="")
+            else:
+                print("     ",end="")
+        H-=1
+        print('')
+    for i in range (len(h)):
+        print("i    ", end="")
+
+
+
